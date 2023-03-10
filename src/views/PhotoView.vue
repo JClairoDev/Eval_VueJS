@@ -6,7 +6,7 @@
         <ul>
             <li v-for="picData of store.data" :key="picData.id">
                 <div class="popup">
-                    <TemplatePics :picData=picData titre="default"></TemplatePics>
+                    <TemplatePics :picData=picData>je suis le nouveau titre</TemplatePics>
                     <button @click="store.supprimer(picData)">supprimer</button>
                 </div>
             </li>
