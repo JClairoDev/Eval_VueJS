@@ -1,8 +1,13 @@
 
+<script setup>
+import TemplatePics from '../components/TemplatePics.vue';
+import { useListePhoto } from '../stores/storePics';
+const store = useListePhoto();
+</script>
+
 <template>
     <div class="about">
         <h1>Affichage des Photos</h1>
-
         <ul>
             <li v-for="picData of store.data" :key="picData.id">
                 <div class="popup">
@@ -11,8 +16,6 @@
                 </div>
             </li>
         </ul>
-
-
     </div>
 </template>
   
@@ -33,11 +36,3 @@
     margin-top: 10px;
 }
 </style>
-
-<script setup>
-import TemplatePics from '../components/TemplatePics.vue';
-import { useListePhoto } from '../stores/storePics';
-
-const store = useListePhoto();
-
-</script>

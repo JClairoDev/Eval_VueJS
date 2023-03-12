@@ -3,9 +3,6 @@ import { defineStore } from 'pinia'
 
 export const useListePhoto = defineStore('ListePhoto', () => {
 
-    // const dataUrl = ref([]);
-    // const dataTitle = ref([]);
-
     const data = ref([]);
 
     fetch('https://jsonplaceholder.typicode.com/photos')
@@ -23,6 +20,5 @@ export const useListePhoto = defineStore('ListePhoto', () => {
     }
 
     return { data, supprimer };
-
 
 });

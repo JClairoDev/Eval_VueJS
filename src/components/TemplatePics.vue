@@ -1,8 +1,6 @@
 <script setup>
-
 defineProps({
     picData: Object,
-    titre: String,
 });
 
 </script>
